@@ -1,0 +1,30 @@
+{
+    "name": "LlamaIndexMediaWikiUI",
+    "author": ["Luke Eversfield"],
+    "url": "URL to your extension documentation",
+    "description": "A MediaWiki Extensions that provides a user interface to query llama_index_mediawiki-service",
+    "type": "specialpage",
+    "version": "1.0.0",
+    "license-name": "MIT",
+    "descriptionmsg": "LlamaIndexMediaWikiUI-desc",
+    "AutoloadClasses": {
+      "LlamaIndexMediaWikiUISpecialPage": "LlamaIndexMediaWikiUISpecialPage.php"
+    },
+    "SpecialPages": {
+      "LlamaIndexMediaWikiUI": "LlamaIndexMediaWikiUISpecialPage"
+    },
+    "manifest_version": 1,
+    "ResourceModules": {
+        "ext.LlamaIndexMediaWikiUIJS": {
+            "scripts": ["LlamaIndexMediaWikiUI.js"],
+            "dependencies": ["jquery"],
+            "localBasePath": "",
+            "remoteExtPath": "LlamaIndexMediaWikiUI"
+        }
+    },
+    "MessagesDirs": {
+      "LlamaIndexMediaWikiUI": [
+        "i18n"
+      ]
+    }
+  }
